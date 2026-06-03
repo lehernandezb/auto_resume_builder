@@ -1,5 +1,6 @@
 from dotenv import load_dotenv
+from google import genai
+from message import opening_screan
 import os
 
-load_dotenv()
-api_key = os.getenv("OPENAI_KEY")
+opening_screan()
