@@ -1,4 +1,4 @@
-
+from master_resume import start
 message = """
 Hello, welcome to the auto resume builder!
           
@@ -15,3 +15,5 @@ def opening_screan():
     key = ["1", "2", "3"]
     if digits_only not in key:
        opening_screan()
+    if digits_only == 1:
+        start()
