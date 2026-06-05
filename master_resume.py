@@ -10,13 +10,14 @@ class person:
         self.linkedin = linkedin
 
 class attributes:
-    def __init__(self, type, start_date, end_date, city, location, skills=""):
+    def __init__(self, type, start_date, end_date, city, location, skills="", extra_info=""):
         self.type = type
         self.start_date = start_date
         self.end_date = end_date
         self.city = city
         self.location = location
         self.skills = skills
+        self.extra_info = extra_info
 
 def start():
-    load_json("data.json")
+    json = load_json("data.json")
